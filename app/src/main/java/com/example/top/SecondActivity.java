@@ -4,6 +4,8 @@ package com.example.top;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
@@ -12,6 +14,8 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main_two);
         TextView textView = findViewById(R.id.teamName);
         WebView browser = findViewById(R.id.browser);
@@ -58,4 +62,5 @@ public class SecondActivity extends AppCompatActivity {
             browser.loadUrl("https://cq.ru/teams/cs-go/furia-esports-furia");
         }
     }
+
 }

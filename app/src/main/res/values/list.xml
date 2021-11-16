@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listTeam">
+        <item>Natus Vincere</item>
+        <item>G2</item>
+        <item>Gambit</item>
+        <item>NIP</item>
+        <item>Heroic</item>
+        <item>Vitality</item>
+        <item>Virtus.pro</item>
+        <item>FaZe</item>
+        <item>Copenhagen Flames</item>
+        <item>FURIA</item>
+    </string-array>
+</resources>

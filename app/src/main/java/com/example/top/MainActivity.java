@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 // по позиции получаем выбранный элемент
                 String selectedItem = listTeamResource[position];
                 Intent intentinfo = new Intent(MainActivity.this, SecondActivity.class);
-                intentinfo.putExtra("choice", selectedItem);
+                intentinfo.putExtra("choiceTeam", selectedItem);
                 startActivity(intentinfo);
             }
         });
